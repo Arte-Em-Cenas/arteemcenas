@@ -1,0 +1,28 @@
+body {font-family: "Lato", sans-serif}
+
+.w3-display-topright-close {position: absolute; z-index: 25; top: 45px; right: 30px;}
+.mySlides {display: none}
+.w3-left, .w3-right, .w3-badge {cursor: pointer}
+.w3-badge {height: 13px; width: 13px; padding: 0}
+.w3-display-container:hover .w3-btn {display: inline-block;}
+.w3-btn:hover {background-color: rgba(0,0,0,0.5); color: white;}
+.w3-btn {
+  display: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0,0,0,0.3);
+  color: white;
+  border: none;
+  padding: 20px;
+  font-size: 24px;
+  transition: 0.3s;
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}

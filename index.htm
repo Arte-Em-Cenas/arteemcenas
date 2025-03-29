@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Inicio</a>
+    <a href="#group" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Quem Somos</a>
+    <a href="#mission" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Missão</a>
+    <a href="#shows" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Apresentações</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Contato</a>
+    
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#group" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Quem Somos</a>
+  <a href="#mission" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Missão</a>
+  <a href="#shows" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Apresentações</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Contato</a>  
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+  <!-- The Band Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="group">
+    <h2 class="w3-wide qstitulo"></h2>
+    <p class="w3-justify qsconteudo"></p>
+  </div>
+
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="mission">
+    <h2 class="w3-wide mstitulo">Missão</h2>
+    <p class="w3-justify msconteudo"></p>
+  </div>
+    
+  <!-- the slideshow section -->
+  <div class="w3-container w3-center" style="width: 80%; margin: auto;" id="shows">
+    <div class="w3-content w3-display-container containerSlides" style="max-width:100%">
+      
+    </div>
+  </div>
+
+  <div id="imageModal" class="w3-modal" onclick="this.style.display='none'" style="background-color: rgba(0, 0, 0, 0.9);">
+    
+    <div class="w3-modal-content w3-animate-zoom" style="width: 90%;">
+      <header class="w3-container">
+        <span class="w3-button w3-red w3-xlarge w3-display-topright ">&times;</span>
+      </header>
+      
+      <img id="modalImage" style="width:100%">
+      
+      <footer class="w3-container w3-gray">
+        <h3 id="modalDesc"></h3>
+      </footer>
+      
+    </div>
+  </div>
+  
+  <!-- The Contact Section -->
+  <div class="w3-container w3-center w3-content w3-padding-64" style="max-width:800px" id="contact">
+    <h2 class="w3-wide w3-center">CONTATO</h2>    
+    <div class="w3-row w3-padding-32">
+      <div class="w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker" style="width:80px"></i> Santo Inácio, PR<br>
+        <i class="fa fa-phone" style="width:80px"></i> Fone: (44) 9 9999-9999<br>
+        <i class="fa fa-envelope" style="width:80px"> </i> Email: mail@mail.com<br>
+      </div>
+      
+    </div>
+  </div>
+  
+<!-- End Page Content -->
+</div>
+
+<!-- Footer -->
+<!-- <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  
+</footer> -->
+
+<script src="./data.js"></script>
+<script src="./app.js"></script>
+
+
+</body></html>
